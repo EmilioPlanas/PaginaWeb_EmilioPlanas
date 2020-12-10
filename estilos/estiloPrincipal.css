@@ -1,0 +1,179 @@
+
+/* 
+verdeOscuro: #283d3b
+verdeAgua: #197278
+claro: #edddd4
+naranjaClaro: #c44536
+naranjaOscuro: #772e25 
+*/
+
+/* negro 200004
+rosa e54079
+rojo b5040a
+rojo oscuro 53030c
+blanco f5fff8
+*/
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: Helvetica;
+    background-color: #ffe8da;
+    color: #311c18;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #bd2525;
+    color: #dad7ce;
+
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 92%;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+}
+
+header .contenedor {
+    display: table;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#volver {
+    padding: 15px;
+    color: #ffe6e6;
+    background-color:  #bd2525;
+    margin: 40px;
+}
+
+/* MENÚ */
+#boton_menu {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 30px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    margin: 0%;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 100vh;
+    background-color: #bd2525;
+    color: #f5fff8;
+    height: 55px;
+    text-decoration: none;
+    border-bottom: 1px solid #f5fff8;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color: #f5fff8;
+    background-color: #bd2525;
+    height: 50px;
+    text-decoration: none;
+    padding: 30px;
+}
+
+
+#boton_menu:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+
+/* BANER */
+#baner {
+    position: relative;
+}
+
+#baner img {
+    width: 100%;
+    height: 100%;
+}
+
+#baner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ffffff;
+    text-align: center;
+}
+
+#baner h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffb24e;
+    -webkit-text-stroke: 1.5px #913a00;
+    border-radius: 4%;
+    text-align: center;
+}
+
+/* MENÚS DE COMIDAS */
+#subtitulo {
+    font-size: 30px;
+    text-align: center;
+}
+#menus_comidas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#menus_comidas div {
+    margin: 15px;
+}
+
+#menus_comidas img {
+    width: 300px;
+}
+
+#menus_comidas h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+#menus_comidas a {
+    color: #c9aa91;
+    background-color: #ffffff;
+    margin: 40px;
+    border-radius: 15%;
+}
+
+.platos img {
+    border-radius: 15%;
+}
+
+#Menus_titulo{
+    padding: 20px;
+    font-size: 45px;
+}
+
